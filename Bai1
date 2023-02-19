@@ -1,0 +1,31 @@
+package gaipuongtrinhbatnhat;
+
+import java.util.Scanner;
+
+public class GaiPuongTrinhBatNhat {
+
+  
+    public static void main(String[] args) {
+        // ax + b = 0;
+        //neu a == 0 va  b == 0 phuong trinh vo so nghiem;
+        //neu a == 0 va b != 0 phuong trinh vo nghiem;
+        //neu a != 0 va b != 0 phuong trinh vo nghiem x = -b / a
+        double a, b;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap a: ");
+        a = sc.nextDouble();
+        System.out.println("Nhap b: ");
+        b = sc.nextDouble();
+        if(a == 0){
+            if( b == 0){
+                System.out.println("Phuong Trinh Vo So Nghiem");
+            }else{
+            System.out.println("Phuong Trinh Vo Nghiem");
+        }               
+}else {
+          float x = (float)((float) -b / a);
+        System.out.println("Phuong Trinh Co Nghiem La :" + x);  
+        }
+    }
+
+}
