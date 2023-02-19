@@ -1,0 +1,34 @@
+package KetThuc;
+
+import bt.GiaiPhuongTrinhBacNha;
+import bt.GiaiPhuongTrinhBac2;
+import bt.tinhtiendien;
+import java.util.Scanner;
+
+public class b4
+{
+    public static void menu ()
+    {
+       System.out.println("GiaiPhuongTrinhBacNha");
+       System.out.println("GiaiPhuongTrinhBac2");
+       System.out.println("tinhtiendien");
+       Scanner sc = new Scanner(System.in);
+       int chon = sc.nextInt();
+       switch(chon)
+       {
+           case 1: Bt.GiaiPhuongTrinhBacNhat();
+           break;
+           case 2: b2.GiaiPhuongTrinhBac2();
+           break;
+           case 3:b3.tinhtiendien();
+           break;
+           case 4: break;
+           default:  
+               System.out.println("nhap sai ");
+       }
+    }
+     public static void main(String[] arg)
+   {
+       menu();
+   }
+}
